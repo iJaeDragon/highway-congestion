@@ -29,11 +29,18 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 원천데이터를 다운로드 받아 압축을 해제하면 내부 데이터가 `.zip.part` 형태로 분할 압축이 되어 있기 때문에 먼저 병합을 진행해야 한다.
 
-```
-  # Windows PowerShell 실행
+(AI Hub 공식 가이드)
 
-  cd [분할 압축이 되어 있는 데이터 경로로 이동]
-  Get-ChildItem -Filter "[파일 이름].zip.part*" | Sort-Object Name | Get-Content -Raw | Set-Content "[파일 이름].zip"
-  # ex) Get-ChildItem -Filter "1-3.수도권영동선.zip.part*" | Sort-Object Name | Get-Content -Raw | Set-Content "1-3.수도권영동선.zip"
+![image](https://github.com/user-attachments/assets/23d3fc95-dcba-4ef7-8847-d7409995a2eb)
+
+`리눅스 OS` 계열에서 진행하길 권장하고 있지만 `윈도우` 환경에서 진행하고 있으므로, `git bash`를 활용 하였다.
+
+
+```
+  # git bash 실행
+
+  cd [분할 압축이 되어 있는 파일 경로로 이동]
+  $ cat [파일명].zip.part* > [생성할 파일명].tgz
+  # ex) $ cat 1-1.수도권영동선.zip.part* > 1-1.수도권영동선.tgz
   
 ```
