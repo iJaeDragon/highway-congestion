@@ -25,7 +25,9 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
           - 1-3.수도권영동선.zip|15.17 GB|key: 45141
 ```
 
-## 사전 작업
+## 원천데이터
+
+### 사전 작업
 
 원천데이터를 다운로드 받아 압축을 해제하면 내부 데이터가 `.zip.part` 형태로 분할 압축이 되어 있기 때문에 먼저 병합을 진행해야 한다.
 
@@ -48,4 +50,40 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
   $ cat [파일명].zip.part* > [생성할 파일명].tgz
   # ex) $ cat 1-1.수도권영동선.zip.part* > 1-1.수도권영동선.tgz
   
+```
+
+## 라벨링데이터
+
+### 사전 작업
+
+가장 먼저 압축을 해제하고 파일을 보면 `.xml` 형태이다. <br/>
+이는 `YOLO`에서 사용할 수 없는 포맷이므로, `YOLO`에서 사용 가능한 포맷으로 수정하여야 한다.
+
+(XML TO YOLO Script)
+[0_script.zip](https://github.com/user-attachments/files/17179619/0_script.zip)
+
+해당 스크립트를 사용하여 포맷을 변경하였다.
+
+
+#### xml_to_yolo_multiple.py
+
+디렉터리를 설정하여 모든 파일을 한번에 변경해 주는 스크립트
+
+```
+  py xml_to_yolo_multiple.py
+  변환할 XML 파일이 있는 디렉토리 경로를 입력하세요: [.xml 파일이 있는 디렉터리 입력]
+  변환된 YOLO 라벨을 저장할 디렉토리 경로를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
+  이미지 너비를 입력하세요: [이미지 너비를 입력한다. (xml을 참고하여 입력)]
+  이미지 높이를 입력하세요: [이미지 높이를 입력한다. (xml을 참고하여 입력)]
+```
+
+#### xml_to_yolo_single.py
+
+특정 파일을 설정하여 해당 파일을 변경해 주는 스크립트
+
+```
+  py xml_to_yolo_single.py
+  변환할 XML 파일 경로를 입력하세요: [특정 .xml 파일 디렉터리 입력]
+  이미지 너비를 입력하세요: [이미지 너비를 입력한다. (xml을 참고하여 입력)]
+  이미지 높이를 입력하세요: [이미지 높이를 입력한다. (xml을 참고하여 입력)]
 ```
