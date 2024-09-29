@@ -29,6 +29,11 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 원천데이터를 다운로드 받아 압축을 해제하면 내부 데이터가 `.zip.part` 형태로 분할 압축이 되어 있기 때문에 먼저 병합을 진행해야 한다.
 
+```
+최초 .tar -> 압축해제 .zip.part -> 병합 .tar -> 최종 .wav
+```
+
+
 (AI Hub 공식 가이드)
 
 ![image](https://github.com/user-attachments/assets/23d3fc95-dcba-4ef7-8847-d7409995a2eb)
