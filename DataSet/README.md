@@ -48,7 +48,7 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 
 ```
-  find [폴더경로] -name [파일명].zip.part* -print0 | sort -zt'.' -k2V | xargs -0 cat > [파일명].zip
+  find [폴더경로] -name "[파일명].zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "[파일명].zip"
 ```
 
 ## 라벨링데이터
