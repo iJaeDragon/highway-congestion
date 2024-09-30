@@ -40,16 +40,15 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 ![image](https://github.com/user-attachments/assets/23d3fc95-dcba-4ef7-8847-d7409995a2eb)
 
-`리눅스 OS` 계열에서 진행하길 권장하고 있지만 `윈도우` 환경에서 진행하고 있으므로, `git bash`를 활용 하였다.
+`리눅스 OS` 계열에서 진행하길 권장하고 있다. <br/>
+`윈도우` 환경에서 진행하려고 시도 하였지만 방법을 찾지 못했기 때문에  `리눅스 OS` 에서 진행 하였다.
+
+
+![image](https://github.com/user-attachments/assets/6f2b1cd9-242a-4e41-be41-f6cb658c3835)
 
 
 ```
-  # git bash 실행
-
-  cd [분할 압축이 되어 있는 파일 경로로 이동]
-  $ cat [파일명].zip.part* > [생성할 파일명].tgz
-  # ex) $ cat 1-1.수도권영동선.zip.part* > 1-1.수도권영동선.tgz
-  
+  find [폴더경로] -name [파일명].zip.part* -print0 | sort -zt'.' -k2V | xargs -0 cat > [파일명].zip
 ```
 
 ## 라벨링데이터
