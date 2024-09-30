@@ -49,6 +49,12 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 ```
   find "[폴더경로]" -name "[파일명].zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "[파일명].zip"
+
+  # ex)
+
+  # find "/ds/download2/100.교통문제_해결을_위한_CCTV_교통_데이터(고속도로)/01.데이터/1.Training/원천데이터/바운딩박스/" -name "1-3.수도권영동선.zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "1-3.수도권영동선.zip"
+  # find "/ds/download1/100.교통문제_해결을_위한_CCTV_교통_데이터(고속도로)/01.데이터/1.Training/원천데이터/바운딩박스/" -name "1-2.수도권영동선.zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "1-2.수도권영동선.zip"
+  # find "/ds/download/100.교통문제_해결을_위한_CCTV_교통_데이터(고속도로)/01.데이터/1.Training/원천데이터/바운딩박스/" -name "1-1.수도권영동선.zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "1-1.수도권영동선.zip"
 ```
 
 ## 라벨링데이터
