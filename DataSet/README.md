@@ -74,6 +74,22 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 가장 먼저 압축을 해제하고 파일을 보면 `.xml` 형태이다. <br/>
 이는 `YOLO`에서 사용할 수 없는 포맷이므로, `YOLO`에서 사용 가능한 포맷으로 수정하여야 한다.
 
+아래 구조처럼 label과 image가 1:1 매치가 되어야 하지만 기존 데이터셋은 하나의 xml 파일에서 여러개의 이미지를 지정하여 설정하였다.
+때문에 이를 기반으로 YOLO 모델 학습에 적합한 구조를 구성하기 위해서 스크립트를 작성하였다.
+
+```
+dataset/
+├── images/
+│   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.png
+│   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.png
+│   └── ...
+├── labels/
+│   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.txt
+│   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.txt
+│   └── ...
+└── data.yaml  # 데이터셋에 대한 정보
+```
+
 (XML TO YOLO Script)
 [0_script.zip](https://github.com/user-attachments/files/17210796/0_script.zip)
 
@@ -99,3 +115,7 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
   XML 파일 경로를 입력하세요: [특정 .xml 파일 디렉터리 입력]
   저장할 디렉토리를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
 ```
+#### 변환 완료
+
+![image](https://github.com/user-attachments/assets/7f9bfb52-1370-445c-a7c8-7cac159d473d)
+
