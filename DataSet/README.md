@@ -43,10 +43,12 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 `리눅스 OS` 계열에서 진행하길 권장하고 있다. <br/>
 `윈도우` 환경에서 진행하려고 시도 하였지만 방법을 찾지 못했기 때문에  `리눅스 OS` 에서 진행 하였다.
 
+#### 1. .zip.part 파일을 리눅스로 옮김.
 
 ![image](https://github.com/user-attachments/assets/6f2b1cd9-242a-4e41-be41-f6cb658c3835)
 
 
+#### 2. 파일 병합 진행
 ```
   find "[폴더경로]" -name "[파일명].zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "[파일명].zip"
 
@@ -57,7 +59,7 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
   # find "/ds/download/100.교통문제_해결을_위한_CCTV_교통_데이터(고속도로)/01.데이터/1.Training/원천데이터/바운딩박스/" -name "1-1.수도권영동선.zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "1-1.수도권영동선.zip"
 ```
 
-![image](https://github.com/user-attachments/assets/dce42379-0d73-42f5-a271-a42b07fbe22a)
+#### 3. 병합된 .zip 파일 압축해제
 
 
 ## 라벨링데이터
