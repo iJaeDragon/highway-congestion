@@ -57,6 +57,9 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
   # find "/ds/download/100.교통문제_해결을_위한_CCTV_교통_데이터(고속도로)/01.데이터/1.Training/원천데이터/바운딩박스/" -name "1-1.수도권영동선.zip.part*" -print0 | sort -zt'.' -k2V | xargs -0 cat > "1-1.수도권영동선.zip"
 ```
 
+![image](https://github.com/user-attachments/assets/dce42379-0d73-42f5-a271-a42b07fbe22a)
+
+
 ## 라벨링데이터
 
 ### 사전 작업
