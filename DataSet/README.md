@@ -96,6 +96,6 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 ```
   py xml_to_yolo_single.py
-  저장할 디렉토리를 입력하세요: [특정 .xml 파일 디렉터리 입력]
+  XML 파일 경로를 입력하세요: [특정 .xml 파일 디렉터리 입력]
   저장할 디렉토리를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
 ```
