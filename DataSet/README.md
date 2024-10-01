@@ -75,7 +75,7 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 이는 `YOLO`에서 사용할 수 없는 포맷이므로, `YOLO`에서 사용 가능한 포맷으로 수정하여야 한다.
 
 (XML TO YOLO Script)
-[0_script.zip](https://github.com/user-attachments/files/17179619/0_script.zip)
+[0_script.zip](https://github.com/user-attachments/files/17210796/0_script.zip)
 
 해당 스크립트를 사용하여 포맷을 변경하였다.
 
@@ -86,10 +86,8 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 ```
   py xml_to_yolo_multiple.py
-  변환할 XML 파일이 있는 디렉토리 경로를 입력하세요: [.xml 파일이 있는 디렉터리 입력]
-  변환된 YOLO 라벨을 저장할 디렉토리 경로를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
-  이미지 너비를 입력하세요: [이미지 너비를 입력한다. (xml을 참고하여 입력)]
-  이미지 높이를 입력하세요: [이미지 높이를 입력한다. (xml을 참고하여 입력)]
+  XML 파일이 있는 디렉토리를 입력하세요: [.xml 파일이 있는 디렉터리 입력]
+  저장할 디렉토리를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
 ```
 
 #### xml_to_yolo_single.py
@@ -98,7 +96,6 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 ```
   py xml_to_yolo_single.py
-  변환할 XML 파일 경로를 입력하세요: [특정 .xml 파일 디렉터리 입력]
-  이미지 너비를 입력하세요: [이미지 너비를 입력한다. (xml을 참고하여 입력)]
-  이미지 높이를 입력하세요: [이미지 높이를 입력한다. (xml을 참고하여 입력)]
+  저장할 디렉토리를 입력하세요: [특정 .xml 파일 디렉터리 입력]
+  저장할 디렉토리를 입력하세요: [포맷을 변경한 파일을 저장할 디렉터리 입력]
 ```
