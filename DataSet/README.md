@@ -61,6 +61,11 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
 
 #### 3. 병합된 .zip 파일 압축해제
 
+![image](https://github.com/user-attachments/assets/a51f647e-9ace-47ca-a84c-90c4e458037a)
+
+
+![image](https://github.com/user-attachments/assets/a59d5726-62df-4e99-bd9d-039a5abcd6ce)
+
 
 ## 라벨링데이터
 
