@@ -12,6 +12,12 @@
   pip install ultralytics
 ```
 
+### NVIDIA 드라이버 설치
+
+현재 장착된 GPU와 맞는 드라이버를 설치한다.
+
+> 설치 : https://www.nvidia.com/en-us/drivers/
+
 ### CUDA Toolkit 셋업
 
 현재 장착된 GPU와 호환되는 버전으로 설치한다.
