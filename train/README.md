@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fb320b94-38dd-46fe-9c1b-14a2c920881d)# train
+# train
 
 ## 사전 작업
 
