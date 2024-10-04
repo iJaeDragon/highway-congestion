@@ -14,11 +14,17 @@
 
 ### CUDA Toolkit 셋업
 
+현재 장착된 GPU와 호환되는 버전으로 설치한다.
+
+테스트는 `CUDA Toolkit` 10.2 버전을 사용하였다.
 
 ### PyTorch 인스톨
 
+`CUDA Toolkit` 버전에 호환되는 `PyTorch`를 설치한다.
 
+```
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu102
+```
 
-
-## run train
+## Run train
 
