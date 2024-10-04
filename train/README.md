@@ -18,6 +18,8 @@
 
 테스트는 `CUDA Toolkit` 10.2 버전을 사용하였다.
 
+> 설치 : https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork
+
 ### PyTorch 인스톨
 
 `CUDA Toolkit` 버전에 호환되는 `PyTorch`를 설치한다.
@@ -28,3 +30,6 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 
 ## Run train
 
+```
+yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/dataset/data.yaml model=yolov8n.pt epochs=10 imgsz=1920,1080 patience=5 device=0
+```
