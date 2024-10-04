@@ -114,7 +114,7 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 * task=detect:
   * 모델의 작업 유형을 설정합니다. 여기서는 객체 탐지를 수행하기 위해 detect로 설정합니다.
 
-*mode=train:
+* mode=train:
   * 모드 설정으로, 여기서는 학습 모드를 의미합니다. 모델을 학습시키기 위해 사용됩니다.
 
 * data=E:/tp/yolo8/ultralytics-main/ultralytics/data/dataset/data.yaml:
