@@ -25,7 +25,7 @@
 `CUDA Toolkit` 버전에 호환되는 `PyTorch`를 설치한다.
 
 ```
-pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu102
+pip install torch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 --extra-index-url https://download.pytorch.org/whl/cu102
 ```
 
 ## Run train
