@@ -83,20 +83,20 @@ names: ['truck', 'bus', 'car']
 ```
 dataset/
 ├── images/
-│   ├── train
+│   ├── train/
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.png
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.png
 │   │   └── ...
-│   ├── val
+│   ├── val/
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.png
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.png
 │   │   └── ...
 ├── labels/
-│   ├── train
+│   ├── train/
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.txt
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.txt
 │   │   └── ...
-│   ├── val
+│   ├── val/
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.txt
 │   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.txt
 │   │   └── ...
