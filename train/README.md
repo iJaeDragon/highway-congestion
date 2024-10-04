@@ -50,6 +50,23 @@ CUDA Tookit 버전과 호환되는 cuDNN 버전을 설치한다.
 pip install torch==1.9.0+cu102 torchvision==0.10.0+cu102 torchaudio==0.9.0 --extra-index-url https://download.pytorch.org/whl/cu102
 ```
 
+## Test
+
+세팅을 완료하고 GPU를 잘 불러오는지 테스트를 해본다.
+
+```
+import torch
+
+print(torch.__version__)
+
+print("CUDA Available: ", torch.cuda.is_available())  # True이면 GPU 사용 가능
+print("cuDNN Available: ", torch.backends.cudnn.is_available())  # True이면 cuDNN 사용 가능
+print("Number of GPUs: ", torch.cuda.device_count())   # 사용 가능한 GPU의 수
+if torch.cuda.is_available():
+    print("Current Device: ", torch.cuda.current_device())  # 현재 사용 중인 GPU의 ID
+    print("Device Name: ", torch.cuda.get_device_name(0))   # 첫 번째 GPU의 이름
+```
+
 ## Run train
 
 ```
