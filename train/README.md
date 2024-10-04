@@ -109,7 +109,7 @@ dataset/
 yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/dataset/data.yaml model=yolov8n.pt epochs=5 imgsz=640 batch=64 patience=3 device=0 --workers=4 --half
 ```
 
-### 파라미터 의미 
+### 하이퍼 파라미터 의미 
 
 * task=detect:
   * 모델의 작업 유형을 설정합니다. 여기서는 객체 탐지를 수행하기 위해 detect로 설정합니다.
