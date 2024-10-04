@@ -149,4 +149,5 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
   * 이 플래그를 활성화하면 모델이 16비트 부동 소수점(FP16)으로 학습됩니다. 이렇게 하면 메모리 사용량이 줄어들고, GPU의 성능을 향상시킬 수 있습니다. 그러나 모든 GPU에서 FP16을 지원하지 않을 수 있습니다.
 
 
-![image](https://github.com/user-attachments/assets/4b6da486-f8ee-4060-a5d2-4f5df0979118)
+![image](https://github.com/user-attachments/assets/987c74cc-8e38-4b31-a53c-b5c5ab0ea253)
+
