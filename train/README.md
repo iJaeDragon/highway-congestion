@@ -78,6 +78,31 @@ nc: 3
 names: ['truck', 'bus', 'car']
 ```
 
+### 실제 구조
+
+```
+dataset/
+├── images/
+│   ├── train
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.png
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.png
+│   │   └── ...
+│   ├── val
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.png
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.png
+│   │   └── ...
+├── labels/
+│   ├── train
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.txt
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.txt
+│   │   └── ...
+│   ├── val
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_001.txt
+│   │   ├── Suwon_CH01_20200720_1700_MON_9m_NH_highway_TW5_sunny_FHD_002.txt
+│   │   └── ...
+└── data.yaml  # 데이터셋에 대한 정보
+```
+
 ## Run train
 
 ```
