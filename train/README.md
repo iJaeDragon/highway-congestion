@@ -67,6 +67,17 @@ if torch.cuda.is_available():
     print("Device Name: ", torch.cuda.get_device_name(0))   # 첫 번째 GPU의 이름
 ```
 
+## data.yaml 설정
+
+data.yaml 폴더 위치를 기준으로 데이터 경로를 지정한다.
+
+```
+train: ./images/train
+val: ./images/val
+nc: 3
+names: ['truck', 'bus', 'car']
+```
+
 ## Run train
 
 ```
