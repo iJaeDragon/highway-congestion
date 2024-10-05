@@ -23,6 +23,13 @@ URL : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubD
           - 1-1.수도권영동선.zip|29.84 GB|key: 45139
           - 1-2.수도권영동선.zip|16.81 GB|key: 45140
           - 1-3.수도권영동선.zip|15.17 GB|key: 45141
+    - 2.Validation
+      - 라벨링데이터
+        - 바운딩박스
+          - 1.수도권영동선.zip|2.54 MB|key: 45042
+      - 원천데이터
+        - 바운딩박스
+          - 1.수도권영동선.zip|8.99 GB|key: 45056
 ```
 
 ## 원천데이터
