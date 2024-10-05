@@ -71,7 +71,7 @@ if torch.cuda.is_available():
 
 data.yaml 폴더 위치를 기준으로 데이터 경로를 지정한다.
 
-train은 학습할 데이터의 위치를 의미함.
+train은 학습할 데이터의 위치를 의미함. <br>
 val은 학습 이후 검증을 진행할 데이터의 위치를 의미함.
 
 ```
