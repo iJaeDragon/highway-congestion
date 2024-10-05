@@ -1,5 +1,8 @@
 # Vaildation
 
+최초 train을 진행 할때 Vaildation도 함께 진행이 되지만 <br/>
+수동으로 Vaildation을 시작할 수 있다.
+
 ## 검증 실행
 
 ```
