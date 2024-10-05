@@ -6,3 +6,8 @@
 
 ![image](https://github.com/user-attachments/assets/63b2d063-5389-41df-8ba8-ee9925d819da)
 
+## 분석 방법
+
+분석할 범위를 지정하여 해당 범위에 탐지된 자동차 대수를 기준으로 혼잡도를 정한다.
+
+![image](https://github.com/user-attachments/assets/bfc2c83a-fee8-4252-bcb7-837cda3c4f2c)
