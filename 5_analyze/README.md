@@ -10,4 +10,4 @@
 
 분석할 범위를 지정하여 해당 범위에 탐지된 자동차 대수를 기준으로 혼잡도를 정하고 해당 구간에 표시한다.
 
-![image](https://github.com/user-attachments/assets/bfc2c83a-fee8-4252-bcb7-837cda3c4f2c)
+![output_detected_image](https://github.com/user-attachments/assets/1db13492-7716-4885-9275-ad1d8265b710)
