@@ -69,3 +69,6 @@ QGIS로 진행
 
 > url : https://geojson.io/
 
+![image](https://github.com/user-attachments/assets/de6d2d9d-1976-4f9d-b013-d8bb94ffdfa1)
+
+이런식으로 선을 그리며 JSON 형태로 데이터를 생성한다.
