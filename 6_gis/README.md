@@ -56,3 +56,16 @@ QGIS로 진행
 
 ## 혼잡 표시
 
+아래 구간별로 제공하는 CCTV를 분석하여
+
+![image](https://github.com/user-attachments/assets/f9ebf421-1491-4560-82a0-a838858ea698)
+
+`OpenLayers`를 통해 생성한 지도 위에 벡터로 혼잡도를 표시해야 된다.
+
+![image](https://github.com/user-attachments/assets/9703ac56-e132-4d1a-b408-df4fd68d0dc7)
+
+이를 위해선 구간별로 좌표를 알아야 하는데 <br/>
+벡터 데이터를 시각적으로 작성하고 JSON 형태로 다운로드 할 수 있는 온라인 툴인 `GeoJSON.io`를 사용하였다.
+
+> url : https://geojson.io/
+
