@@ -14,6 +14,8 @@
   * [Train](#Train)
 
   * [Validation](#Validation)
+   
+    * [confusion_matrix_normalized, confusion_matrix](#confusion_matrix_normalized,-confusion_matrix)
 
 ## DataSet
 
