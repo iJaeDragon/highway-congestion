@@ -22,7 +22,9 @@
   * [Validation](#Validation)
  
   * [Detect](#Detect)
- 
+
+* [Analyze](#Analyze)
+
 * [GIS](#GIS)
 
 ## Development Environment
@@ -111,7 +113,7 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (1, 3, 448, 640)
 ```
 
-### Analyze
+## Analyze
 
 고속도로를 실시간으로 분석하기 위해서 `국가교통정보센터`에서 제공하는 CCTV 자료를 활용하였다.
 
