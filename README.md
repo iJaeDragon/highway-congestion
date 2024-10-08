@@ -162,4 +162,10 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 ```
 
 각 구간을 특정할 수 있도록  `id`를 임의로 지정하였고,  <BR/>
-고속도로 영상 자료 호출 API 형식에 맞추기 위해서 CCTV가 존재하는 위,경도 좌표를 미리 입력해놨다.
+고속도로 영상 자료 호출 API 형식에 맞추기 위해서 CCTV가 존재하는 위,경도 좌표를 미리 입력해놨다. <BR/>
+
+`status` 속성은 혼잡도 상태값이며, 스케줄러에서 분석한 값을 해당 속성에 기록한다.
+
+#### (결과 화면)
+
+![image](https://github.com/user-attachments/assets/e10f0980-4173-467f-af56-1d447c34422d)
