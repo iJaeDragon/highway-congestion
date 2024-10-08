@@ -16,6 +16,8 @@
   * [Validation](#Validation)
  
   * [Detect](#Detect)
+ 
+* [GIS](#GIS)
 
 ## DataSet
 
@@ -80,6 +82,7 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 ![test1](https://github.com/user-attachments/assets/c80f7f80-6667-4675-894a-8fb9cbe7bee0)
 
 #### Detect Result
+
 ```
 0: 448x640 4 cars, 7.4ms
 Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (1, 3, 448, 640)
@@ -96,4 +99,8 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 #### 30대 이상 : 혼잡
 
 
+## GIS
 
+혼잡도 `GIS`를 활용하여 표현 하였으며, `OpenLayers` 라이브러리를 활용 했다.
+
+![image](https://github.com/user-attachments/assets/88d64c1c-687e-496a-a7ec-9be193b4187d)
