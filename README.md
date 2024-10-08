@@ -50,7 +50,15 @@ AI Hub에서 제공하는 교통문제 해결을 위한 `CCTV 교통 영상(고�
 
 ### Train
 
-여기에는 섹션 1의 내용이 포함됩니다.
+|   name   | YOLOv8 model | epoch | batch | imgsz | patience | workers |
+|:--------:|:------------:|:-----:|:-----:|:-----:|:--------:|:-------:|
+|  first   |     nano     |   5   |  64   |  640  |     3    |    4    |
+
+#### run
+
+```
+yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/dataset/data.yaml model=yolov8n.pt epochs=5 imgsz=640 batch=64 patience=3 device=0 --workers=4 --half
+```
 
 ### Validation
 
