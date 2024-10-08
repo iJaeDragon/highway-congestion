@@ -60,7 +60,6 @@ AI Hub에서 제공하는 교통문제 해결을 위한 `CCTV 교통 영상(고�
 
 ### confusion_matrix_normalized, confusion_matrix
 
-`Predicted`는 예측한 데이터, `True`는 실제 데이터를 의미한다.<br/>
 `background` 데이터를 학습하지 못해서 다른 데이터를 `background`로 오인식 한 경우가 많으며,<br/>
 `bus` 데이터 정확율이 높지 못한 문제가 있다.
 
