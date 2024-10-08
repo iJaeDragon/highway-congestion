@@ -72,3 +72,36 @@ QGIS로 진행
 ![image](https://github.com/user-attachments/assets/de6d2d9d-1976-4f9d-b013-d8bb94ffdfa1)
 
 이런식으로 선을 그리며 JSON 형태로 데이터를 생성한다.
+
+이후 JSON 데이터를 불러와 지도 위에 벡터 데이터를 생성한다.
+```
+        // GeoJSON 파일로부터 벡터 데이터를 불러오는 벡터 소스 생성
+        const vectorSource = new ol.source.Vector({
+            url: '/static/map.geojson',  // GeoJSON 파일 경로
+            format: new ol.format.GeoJSON()  // GeoJSON 형식으로 읽기
+        });
+
+        // 벡터 레이어 생성 (벡터 소스 사용)
+        const vectorLayer = new ol.layer.Vector({
+            source: vectorSource,
+            style: new ol.style.Style({  // 벡터 데이터 스타일 설정
+                stroke: new ol.style.Stroke({
+                    color: 'gray',  // 선 색상 (초록)
+                    width: 8  // 선 두께
+                })
+            })
+        });
+
+        // 지도 객체 생성
+        const map = new ol.Map({
+            target: 'map',  // 지도가 그려질 div ID
+            layers: [
+                rasterLayer,  // OSM 타일 레이어 추가
+                vectorLayer  // GeoJSON 벡터 레이어 추가
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([127.024612, 37.532600]),  // 지도 중심 좌표 (경도, 위도: 서울)
+                zoom: 12  // 줌 레벨 설정
+            })
+        });
+```
