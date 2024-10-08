@@ -14,6 +14,8 @@
   * [Train](#Train)
 
   * [Validation](#Validation)
+ 
+  * [Detect](#Detect)
 
 ## DataSet
 
@@ -73,4 +75,6 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 
 ![image](https://github.com/user-attachments/assets/6b670c18-d47e-4d23-945d-087aa862a487)
 
+### Detect
 
+![test1](https://github.com/user-attachments/assets/c80f7f80-6667-4675-894a-8fb9cbe7bee0)
