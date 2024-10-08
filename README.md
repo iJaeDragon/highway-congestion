@@ -166,6 +166,10 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 `status` 속성은 혼잡도 상태값이며, 스케줄러에서 분석한 값을 해당 속성에 기록한다.
 
+`1: 여유`, `2: 보통`, `3: 혼잡`
+
 #### (결과 화면)
 
 ![image](https://github.com/user-attachments/assets/e10f0980-4173-467f-af56-1d447c34422d)
+
+초록선은 해당 구간이 여유롭다는 의미이며, 주황선은 보통, 빨간선은 혼잡함을 의미한다.
