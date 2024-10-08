@@ -36,6 +36,11 @@
 ### Learning
 
  * Model : YOLOv8
+ * Ultralytics 8.3.4
+ * CUDA Toolkit 10.2
+ * cuDNN
+ * PyTorch : 1.9.0+cu102
+ * cv2
 
 ## DataSet
 
