@@ -78,3 +78,22 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 ### Detect
 
 ![test1](https://github.com/user-attachments/assets/c80f7f80-6667-4675-894a-8fb9cbe7bee0)
+
+#### Detect Result
+```
+0: 448x640 4 cars, 7.4ms
+Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (1, 3, 448, 640)
+```
+
+### Analyze
+
+혼잡도는 Detect 결과중 차량 대수를 기준으로 상태를 처리하며, 기준은 아래와 같이 정의했음.
+
+#### 20대 미만 : 여유
+
+#### 20대 이상 ~ 30대 미만 : 보통
+
+#### 30대 이상 : 혼잡
+
+
+
