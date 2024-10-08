@@ -4,21 +4,19 @@
 
 ![image](https://github.com/user-attachments/assets/3e0095f8-ebd8-4aab-93ce-2ef7460131c3)
 
-# 목차
-- [섹션 1](#섹션-1)
+## 목차
+* [Model](#Model)
 
-- [섹션 2](#섹션-2)
+  * [Train](#Train)
 
-  - [섹션 2.1](#섹션-21)
+  * [Validation](#Validation)
 
-# 섹션 1
+## Model
+
+### Train
 
 여기에는 섹션 1의 내용이 포함됩니다.
 
-# 섹션 2
+### Validation
 
 여기에는 섹션 2의 내용이 포함됩니다.
-
-## 섹션 2.1
-
-여기에는 섹션 2.1의 내용이 포함됩니다.
