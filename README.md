@@ -113,6 +113,10 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 ### Analyze
 
+고속도로를 실시간으로 분석하기 위해서 `국가교통정보센터`에서 제공하는 CCTV 자료를 활용하였다.
+
+![image](https://github.com/user-attachments/assets/458a95aa-41eb-4358-9185-73062950954b)
+
 서버에서 스케줄러를 통해 특정 주기로 구간별로 `Detect`를 수행하여 혼잡도를 파악한다.
 
 혼잡도는 `Detect` 결과중 차량 대수를 기준으로 상태를 처리하며, 기준은 아래와 같이 정의했음.
