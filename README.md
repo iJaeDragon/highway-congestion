@@ -5,6 +5,12 @@
 ![image](https://github.com/user-attachments/assets/3e0095f8-ebd8-4aab-93ce-2ef7460131c3)
 
 ## 목차
+* [Development Environment](#Development-Environment)
+
+  * [Server](#Server)
+  
+  * [Learning](#Learning)
+
 * [DataSet](#DataSet)
 
   * [UseData](#UseData)
@@ -18,6 +24,18 @@
   * [Detect](#Detect)
  
 * [GIS](#GIS)
+
+## Development Environment
+
+### Server
+
+ * Lenguage : Python (3.9.13)
+ * Framework : FastAPI
+ * Interpreter type : project venv
+
+### Learning
+
+ * Model : YOLOv8
 
 ## DataSet
 
