@@ -1,6 +1,6 @@
 import os
-import cv2
 from ultralytics import YOLO
+from util import imageProcess
 
 # 현재 파일의 경로 (예: 이 스크립트 파일이 있는 위치)
 current_file_path = os.path.abspath(__file__)
@@ -12,14 +12,12 @@ project_path = os.path.dirname(os.path.dirname(current_file_path))
 # 로컬 YOLOv8 모델 파일 경로
 model_path = os.path.join(project_path, 'static\\model', 'best.pt')
 
-image_path = os.path.join(project_path, 'static\\image', 'test2.png')
-
-def detect(confidence_threshold=0.5) :
+def detect(image_path, confidence_threshold=0.5) :
     # YOLOv8 모델 로드
     model = YOLO(model_path)
 
     # 이미지 읽기
-    img = cv2.imread(image_path)  # 감지할 이미지 경로
+    img = imageProcess.read_image_from_url(image_path)  # 감지할 이미지 경로
 
     # 객체 감지
     results = model(img)

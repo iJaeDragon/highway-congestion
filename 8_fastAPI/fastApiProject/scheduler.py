@@ -1,9 +1,5 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from script import statusUpdate
-
-from script import yoloV8
-
 from service import congestionReflecting
 
 # 스케줄러 인스턴스 생성

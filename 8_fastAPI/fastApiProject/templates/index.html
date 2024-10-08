@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenLayers Map with GeoJSON Example</title>
     <!-- OpenLayers 스타일 및 스크립트 -->
-    <link rel="stylesheet" href="/css/ol.css" type="text/css">
-    <script src="/js/ol.js"></script>
+    <link rel="stylesheet" href="/static/css/ol.css" type="text/css">
+    <script src="/static/js/ol.js"></script>
     <style>
         /* 지도 크기를 설정하는 스타일 */
         #map {
@@ -34,12 +34,33 @@
         // 벡터 레이어 생성 (벡터 소스 사용)
         const vectorLayer = new ol.layer.Vector({
             source: vectorSource,
-            style: new ol.style.Style({  // 벡터 데이터 스타일 설정
-                stroke: new ol.style.Stroke({
-                    color: 'gray',  // 선 색상 (초록)
-                    width: 8  // 선 두께
-                })
-            })
+            style: function(feature) {
+                // 속성에 따라 스타일을 다르게 설정
+                const type = feature.get('status');  // 피처의 'type' 속성 가져오기
+
+                // 기본 스타일
+                let strokeColor = 'gray';  // 기본 선 색상
+                let strokeWidth = 8;  // 기본 선 두께
+
+                // 속성에 따라 색상 및 두께 변경
+                if (type == '1') {
+                    strokeColor = 'green';  // type1의 선 색상
+                    strokeWidth = 8;  // type1의 선 두께
+                } else if (type == '2') {
+                    strokeColor = 'orange';  // type2의 선 색상
+                    strokeWidth = 8;  // type2의 선 두께
+                } else if (type == '3') {
+                    strokeColor = 'red';  // type3의 선 색상
+                    strokeWidth = 8;  // type3의 선 두께
+                }
+
+                return new ol.style.Style({
+                    stroke: new ol.style.Stroke({
+                        color: strokeColor,  // 속성에 따라 선 색상 설정
+                        width: strokeWidth   // 속성에 따라 선 두께 설정
+                    })
+                });
+            }
         });
 
         // 지도 객체 생성

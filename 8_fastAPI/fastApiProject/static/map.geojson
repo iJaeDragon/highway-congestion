@@ -5,7 +5,14 @@
             "type": "Feature",
             "properties": {
                 "id": "ED0001",
-                "status": "2"
+                "status": "1",
+                "type": "ex",
+                "cctvType": "3",
+                "minX": "126.73660421111015",
+                "maxX": "126.74100479368019",
+                "minY": "37.4288234275062",
+                "maxY": "37.43382986366974",
+                "getType": "json"
             },
             "geometry": {
                 "coordinates": [
@@ -41,7 +48,14 @@
             "type": "Feature",
             "properties": {
                 "id": "ED0002",
-                "status": ""
+                "status": "1",
+                "type": "ex",
+                "cctvType": "3",
+                "minX": "126.73553402444435",
+                "maxX": "126.74002697586025",
+                "minY": "37.42163287416594",
+                "maxY": "37.42610492935842",
+                "getType": "json"
             },
             "geometry": {
                 "coordinates": [
