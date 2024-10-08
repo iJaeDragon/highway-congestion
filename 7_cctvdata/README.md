@@ -71,3 +71,8 @@
    }
 }
 ```
+
+### 6. cctvurl 확인
+
+![image](https://github.com/user-attachments/assets/d7ed4075-e373-4a9e-a179-b8ba9e4b2201)
+
