@@ -66,11 +66,11 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 
 정확율 평균은 0.777(77.7%)가 나왔으며, 조금의 개선이 필요하다.
 
-#### confusion_matrix_normalized, confusion_matrix
-
 `background` 데이터를 학습하지 못해서 다른 데이터를 `background`로 오인식 한 경우가 많으며,<br/>
 `bus` 데이터 정확율이 높지 못한 문제가 있다.
 
 ![image](https://github.com/user-attachments/assets/71e4abb7-8496-4b54-b552-08f262073062)
+
+![image](https://github.com/user-attachments/assets/6b670c18-d47e-4d23-945d-087aa862a487)
 
 
