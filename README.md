@@ -71,7 +71,6 @@ yolo task=detect mode=train data=E:/tp/yolo8/ultralytics-main/ultralytics/data/d
 `background` 데이터를 학습하지 못해서 다른 데이터를 `background`로 오인식 한 경우가 많으며,<br/>
 `bus` 데이터 정확율이 높지 못한 문제가 있다.
 
-![confusion_matrix_normalized](https://github.com/user-attachments/assets/caeee858-8a33-4f02-b925-74436cade548)
+![image](https://github.com/user-attachments/assets/71e4abb7-8496-4b54-b552-08f262073062)
 
-![confusion_matrix](https://github.com/user-attachments/assets/f322b9c8-c26a-4ea0-90fd-2b382f75410e)
 
