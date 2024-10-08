@@ -14,8 +14,6 @@
   * [Train](#Train)
 
   * [Validation](#Validation)
-   
-    * [confusion_matrix_normalized, confusion_matrix](#confusion_matrix_normalized,-confusion_matrix)
 
 ## DataSet
 
@@ -60,7 +58,7 @@ AI Hub에서 제공하는 교통문제 해결을 위한 `CCTV 교통 영상(고�
 
 정확율 평균은 0.777(77.7%)가 나왔으며, 조금의 개선이 필요하다.
 
-### confusion_matrix_normalized, confusion_matrix
+#### confusion_matrix_normalized, confusion_matrix
 
 `background` 데이터를 학습하지 못해서 다른 데이터를 `background`로 오인식 한 경우가 많으며,<br/>
 `bus` 데이터 정확율이 높지 못한 문제가 있다.
