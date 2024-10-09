@@ -132,7 +132,7 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 ## GIS
 
-혼잡도 `GIS`를 활용하여 표현 하였으며, `OpenLayers` 라이브러리를 활용 했다.
+혼잡도는 `GIS`를 활용하여 표현 하였으며, `OpenLayers` 라이브러리를 활용 했다.
 
 ![image](https://github.com/user-attachments/assets/88d64c1c-687e-496a-a7ec-9be193b4187d)
 
