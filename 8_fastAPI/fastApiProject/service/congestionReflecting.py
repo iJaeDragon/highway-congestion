@@ -10,9 +10,7 @@ current_file_path = os.path.abspath(__file__)
 # 프로젝트 경로 구하기 (현재 파일의 부모 디렉토리)
 project_path = os.path.dirname(os.path.dirname(current_file_path))
 
-
-file_path = os.path.join(project_path, 'static', 'map.geojson')  # static/map.json의 절대 경로
-
+file_path = os.path.join(project_path, 'static', 'segmentSection.geojson')  # static/map.json의 절대 경로
 
 urlProperties = configparser.ConfigParser()
 urlProperties.read(os.path.join(project_path, 'propertis', 'url.properties'))

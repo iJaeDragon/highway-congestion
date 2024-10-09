@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0001",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.73660421111015",
+        "maxX": "126.74100479368019",
+        "minY": "37.4288234275062",
+        "maxY": "37.43382986366974",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.73847786616176,
+          37.43291513145789
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0002",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.73553402444435",
+        "maxX": "126.74002697586025",
+        "minY": "37.42163287416594",
+        "maxY": "37.42610492935842",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.73788681774357,
+          37.42103257284454
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

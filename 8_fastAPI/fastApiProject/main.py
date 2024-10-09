@@ -19,18 +19,16 @@ templates = Jinja2Templates(directory="templates")
 # 스케줄러 시작
 start_scheduler()
 
+# CCTV 라우터 포함
+from controller.cctvController import router as cctv_router  # CCTV 라우터를 가져옵니다.
+app.include_router(cctv_router)  # CCTV 라우터를 메인 앱에 포함합니다.
+
 # FastAPI 애플리케이션 종료 시 스케줄러 중지
 @app.on_event("shutdown")
 def shutdown_event():
     stop_scheduler()
 
-
 # 웹 페이지 반환 엔드포인트
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request, "title": "Welcome to FastAPI!"})
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}

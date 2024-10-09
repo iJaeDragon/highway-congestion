@@ -11,7 +11,7 @@ def scheduled_task():
 
 # 작업 추가
 def start_scheduler():
-    scheduler.add_job(scheduled_task, 'interval', seconds=10)
+    scheduler.add_job(scheduled_task, 'interval', seconds=1000)
     scheduler.start()
 
 # 스케줄러 중지 함수

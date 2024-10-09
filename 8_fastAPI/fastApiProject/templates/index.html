@@ -26,14 +26,20 @@
         });
 
         // GeoJSON 파일로부터 벡터 데이터를 불러오는 벡터 소스 생성
-        const vectorSource = new ol.source.Vector({
-            url: '/static/map.geojson',  // GeoJSON 파일 경로
+        const segmentSectionVectorSource = new ol.source.Vector({
+            url: '/static/segmentSection.geojson',  // GeoJSON 파일 경로
+            format: new ol.format.GeoJSON()  // GeoJSON 형식으로 읽기
+        });
+
+        // GeoJSON 파일로부터 벡터 데이터를 불러오는 벡터 소스 생성
+        const cctvVectorSource = new ol.source.Vector({
+            url: '/static/cctv.geojson',  // GeoJSON 파일 경로
             format: new ol.format.GeoJSON()  // GeoJSON 형식으로 읽기
         });
 
         // 벡터 레이어 생성 (벡터 소스 사용)
-        const vectorLayer = new ol.layer.Vector({
-            source: vectorSource,
+        const segmentSectionVectorLayer = new ol.layer.Vector({
+            source: segmentSectionVectorSource,
             style: function(feature) {
                 // 속성에 따라 스타일을 다르게 설정
                 const type = feature.get('status');  // 피처의 'type' 속성 가져오기
@@ -63,18 +69,69 @@
             }
         });
 
+        // 벡터 레이어 생성 (벡터 소스 사용)
+        const cctvVectorLayer = new ol.layer.Vector({
+            source: cctvVectorSource,
+            style: function(feature) {
+
+                return new ol.style.Style({
+                    image: new ol.style.Icon({
+                        anchor: [0.5, 1], // 앵커 위치 설정 (아이콘 하단 중앙)
+                        src: '/static/image/cctv_icon.png', // CCTV 아이콘 이미지 경로
+                        scale: 0.1 // 아이콘 크기 조절 (필요 시 조정)
+                      })
+                });
+            }
+        });
+
         // 지도 객체 생성
         const map = new ol.Map({
             target: 'map',  // 지도가 그려질 div ID
             layers: [
                 rasterLayer,  // OSM 타일 레이어 추가
-                vectorLayer  // GeoJSON 벡터 레이어 추가
+                segmentSectionVectorLayer,  // GeoJSON 벡터 레이어 추가
+                cctvVectorLayer
             ],
             view: new ol.View({
                 center: ol.proj.fromLonLat([127.024612, 37.532600]),  // 지도 중심 좌표 (경도, 위도: 서울)
                 zoom: 12  // 줌 레벨 설정
             })
         });
+
+        // 클릭 이벤트 리스너 추가
+        map.on('singleclick', async function (event) {
+            map.forEachFeatureAtPixel(event.pixel, async function (feature) {
+                const properties = feature.getProperties();
+
+                // cctv 클릭 시
+                if(properties.id.slice(0,1) == 'C') {
+                    const result = await getCctv(properties);
+
+                    window.open(result.response.data.cctvurl);
+                }
+            });
+        });
+    </script>
+    <script>
+        async function getCctv(data) {
+            try {
+                const response = await fetch('/cctv/getCctv', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('Error sending data:', error);
+            }
+        }
     </script>
 </body>
 </html>
