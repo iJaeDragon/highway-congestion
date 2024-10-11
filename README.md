@@ -199,6 +199,10 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 #### (결과 화면)
 
-![image](https://github.com/user-attachments/assets/e10f0980-4173-467f-af56-1d447c34422d)
+![image](https://github.com/user-attachments/assets/7930ec71-3114-4ad3-96c9-d6ebb034c898)
 
 초록선은 해당 구간이 여유롭다는 의미이며, 주황선은 보통, 빨간선은 혼잡함을 의미한다.
+
+![image](https://github.com/user-attachments/assets/63a68a08-ea12-48fe-a343-fbb48abb87d8)
+
+CCTV 아이콘을 클릭하여 CCTV 영상을 확인할 수 있다.
