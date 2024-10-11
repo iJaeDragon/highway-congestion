@@ -14,6 +14,15 @@
             height: 800px;
         }
     </style>
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="/static/css/magnific-popup.min.css">
+    <!-- jQuery -->
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="/static/js/request-util.js"></script>
 </head>
 <body>
     <!-- 지도 컨테이너 -->
@@ -105,33 +114,30 @@
 
                 // cctv 클릭 시
                 if(properties.id.slice(0,1) == 'C') {
-                    const result = await getCctv(properties);
+                    const result = await requestUtil.asyncRequest('POST', '/cctv/getCctv', JSON.stringify(properties));
 
-                    window.open(result.response.data.cctvurl);
+                    // Magnific Popup을 통해 비디오 URL을 iframe으로 모달에 띄우기
+                    $.magnificPopup.open({
+                      items: {
+                        src: result.response.data.cctvurl // CCTV URL이 들어간 iframe
+                      },
+                      type: 'iframe',
+                      closeBtnInside: true
+                    });
                 }
             });
         });
-    </script>
-    <script>
-        async function getCctv(data) {
-            try {
-                const response = await fetch('/cctv/getCctv', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
+        // 마우스 오버 시 커서 변경 이벤트 추가
+        map.on('pointermove', function(evt) {
+            // 이벤트 위치에서 레이어에 포함된 피처만 검사
+            const feature = map.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
+                return layer === cctvVectorLayer ? feature : null;
+            });
 
-                return await response.json();
-            } catch (error) {
-                console.error('Error sending data:', error);
-            }
-        }
+            // CCTV 벡터 레이어 위에 있을 때만 커서를 'pointer'로 변경
+            map.getTargetElement().style.cursor = feature ? 'pointer' : '';
+        });
     </script>
 </body>
 </html>
