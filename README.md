@@ -197,6 +197,33 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 `1: 여유`, `2: 보통`, `3: 혼잡`
 
+#### CCTV 위치 데이터
+
+```
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0001",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.73660421111015",
+        "maxX": "126.74100479368019",
+        "minY": "37.4288234275062",
+        "maxY": "37.43382986366974",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.73847786616176,
+          37.43291513145789
+        ],
+        "type": "Point"
+      }
+    }
+```
+
+해당 위치에 CCTV 아이콘을 추가하여, 클릭 시 영상을 볼 수 있도록 한다.
+
 #### (결과 화면)
 
 ![image](https://github.com/user-attachments/assets/7930ec71-3114-4ad3-96c9-d6ebb034c898)
