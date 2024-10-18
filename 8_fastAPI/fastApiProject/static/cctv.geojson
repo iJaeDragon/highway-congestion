@@ -40,6 +40,305 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0003",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.73722606077115",
+        "maxX": "126.73953774329414",
+        "minY": "37.417464209511394",
+        "maxY": "37.41871774818776",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.73979240080428,
+          37.40891782420775
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0004",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7386859306834",
+                "maxX": "126.74092908343721",
+                "minY": "37.40773009449504",
+                "maxY": "37.40927431349134",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.74055023123827,
+                        37.403817513039996
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0005",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.73947960040789",
+                "maxX": "126.74157320964383",
+                "minY": "37.40342712451272",
+                "maxY": "37.40479324447513",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.74855370448216,
+                        37.39030064594763
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED000",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "",
+        "maxX": "",
+        "minY": "",
+        "maxY": "",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0006",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7462921333015",
+                "maxX": "126.75030139077859",
+                "minY": "37.38969726741864",
+                "maxY": "37.39037986086373",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.75113234292729,
+                        37.38854382420945
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0007",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7506280562211",
+                "maxX": "126.75264993238653",
+                "minY": "37.38789191034874",
+                "maxY": "37.388541817447376",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.75224335416328,
+                        37.38792702869722
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0008",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7506280562211",
+                "maxX": "126.75264993238653",
+                "minY": "37.38789191034874",
+                "maxY": "37.388541817447376",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.7647770868378,
+                        37.38072882910174
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0009",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.76214764272993",
+                "maxX": "126.76912095028865",
+                "minY": "37.37920091802269",
+                "maxY": "37.381038691911726",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.76722952210707,
+                        37.37512860482765
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0010",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7648326744507",
+                "maxX": "126.77005430926738",
+                "minY": "37.373856136073286",
+                "maxY": "37.377889382280756",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+          126.76680367495811,
+                        37.368125899381965
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0011",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.7646091103611",
+                "maxX": "126.76943949121255",
+                "minY": "37.36786590842026",
+                "maxY": "37.37236554980224",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.76769302456438,
+                        37.36427803772155
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0012",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.76461170502364",
+                "maxX": "126.77011217846115",
+                "minY": "37.363457764100275",
+                "maxY": "37.367311739949145",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.77968068750556,
+                        37.3579863872954
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0013",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.77822433102403",
+                "maxX": "126.78284915972267",
+                "minY": "37.35584121944703",
+                "maxY": "37.359286175420536",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.78017635493768,
+                        37.357810819484726
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0014",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.77822433102403",
+                "maxX": "126.78284915972267",
+                "minY": "37.35584121944703",
+                "maxY": "37.359286175420536",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.78529792430982,
+                        37.35611495313677
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0015",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.77995682462017",
+                "maxX": "126.78991180643948",
+                "minY": "37.354933107875894",
+                "maxY": "37.357181615734035",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.80139008645955,
+                        37.351517896544095
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C-ED0016",
+        "type": "ex",
+        "cctvType": "2",
+        "minX": "126.79982495688455",
+                "maxX": "126.8031251512217",
+                "minY": "37.34876804565519",
+                "maxY": "37.35394282055283",
+        "getType": "json"
+      },
+      "geometry": {
+        "coordinates": [
+            126.80748949646835,
+                        37.35058862912253
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
