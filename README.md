@@ -2,7 +2,7 @@
 
 > 고속도로 혼잡도 분석 프로젝트
 
-![image](https://github.com/user-attachments/assets/3e0095f8-ebd8-4aab-93ce-2ef7460131c3)
+![image](https://github.com/user-attachments/assets/357c034e-f358-497e-9873-69e3395b07ce)
 
 ## 목차
 * [Development Environment](#Development-Environment)
