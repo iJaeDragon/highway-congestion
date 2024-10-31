@@ -233,3 +233,17 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 ![image](https://github.com/user-attachments/assets/63a68a08-ea12-48fe-a343-fbb48abb87d8)
 
 CCTV 아이콘을 클릭하여 CCTV 영상을 확인할 수 있다.
+
+## 제언
+
+### 모델 성능
+
+#### 1. 모델 크기 변경
+
+#### 2. 하이퍼 파라미터 상향 조정
+
+#### 3. 백그라운드 데이터 추가
+
+차량 객체가 존재하지 않는 이미지를 찾기는 어려워 인페이팅 AI 도구를 활용하여 차량을 제거하는식으로 이미지를 생성하고 해당 이미지를 백그라운드로 학습 시킨다.
+
+![image](https://github.com/user-attachments/assets/492e53c9-f8e4-4f7f-a7a4-dcac1c757a0f)
