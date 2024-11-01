@@ -254,3 +254,10 @@ CCTV 아이콘을 클릭하여 CCTV 영상을 확인할 수 있다.
 차량 객체가 존재하지 않는 이미지를 찾기는 어려워 인페이팅 AI 도구를 활용하여 차량을 제거하는식으로 이미지를 생성하고 해당 이미지를 백그라운드로 분류하여 학습 시킨다.
 
 ![image](https://github.com/user-attachments/assets/492e53c9-f8e4-4f7f-a7a4-dcac1c757a0f)
+
+### 양방향 분석
+
+현재는 이미지에서 방향 상관없이 차량대수를 파악하여 혼잡도를 한줄로 표현하지만,
+방향별로 차량대수를 파악하여, 방향별로 혼잡도를 표현한다.
+
+![image](https://github.com/user-attachments/assets/11b2c5e4-4b0c-439f-945d-9b6858ed104a)
