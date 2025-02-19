@@ -233,7 +233,7 @@ Speed: 1.0ms preprocess, 7.4ms inference, 1.0ms postprocess per image at shape (
 
 #### (결과 화면)
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/6c3dd5fd-2c3e-428b-ac87-9f582745a46f)
 
 초록선은 해당 구간이 여유롭다는 의미이며, 주황선은 보통, 빨간선은 혼잡함을 의미한다.
 
